@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --facebook: #3b5999;
+    --instagram:#e4405f;
+    --whatsapp: #25D366;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fefefe;
+    border: 3px solid #0a0a0a;
+}
+header , footer {
+    background-color: #5604a7;
+    color: #333333;
+    padding: 20px;
+    border-bottom: 3px solid #000000;
+    font-family: "Bickham Script Pro", serif;
+}
+.logo img {
+    height: 100px;
+}
+
+.redes-container{
+    display: flex;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+.redes-container ul li {
+    display:inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.redes-container ul li a {
+    display: block;
+    padding: 0 10px;
+    background: #000000;
+    color: #ffffff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0,0,0, .2);
+    transition: .2s;
+
+}
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
+    padding: 10px 0;
+    margin-top: auto;
+    font-family: "Bickham Script Pro", serif;
+    border-top: 3px solid #000000;
+}
+
+footer p {
+    color: #fff6f6;
+}
+.redes-container ul:hover a{
+    filter: blur(2px);
+}
+.redes-container ul li  a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0,0,0, .4);
+    filter: none;
+
+}
+.redes-container ul li .facebook:hover{
+    background: var(--facebook) ;
+
+}
+.redes-container ul li .instagram:hover{
+    background: var(--instagram) ;
+
+}
+.redes-container ul li .whatsapp:hover{
+    background: var(--whatsapp) ;
+
+}
+@media screen and (min-width: 600px ) {
+    footer {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    footer p {
+        width: 45%;
+        
+    }
+}
+
+@media screen and (min-width: 900px) {
+    footer p {
+        width: 30%;
+        
+    }
+}
